@@ -1,0 +1,112 @@
+@font-face{
+    font-family:'streamline';
+    src:url("../fonts/streamline.eot?19c5cw");
+    src:url("../fonts/streamline.eot?19c5cw#iefix") format("embedded-opentype"),url("../fonts/streamline.woff?19c5cw") format("woff"),url("../fonts/streamline.ttf?19c5cw") format("truetype"),url("../fonts/streamline.svg?19c5cw#streamline") format("svg");
+    font-weight:normal;
+    font-style:normal
+}
+
+@font-face{
+    font-family:'dinRegular';
+    src:url("../fonts/din-regular-webfont.eot");
+    src:url("../fonts/din-regular-webfont.eot?#iefix") format("embedded-opentype"),url("../fonts/din-regular-webfont.woff2") format("woff2"),url("../fonts/din-regular-webfont.svg#dinregular") format("svg"),url("../fonts/din-regular.ttf") format("truetype"),url("../fonts/din-regular.woff") format("woff");
+    font-weight:normal;
+    font-style:normal;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale
+}
+
+@font-face{font-family:'dinMedium';
+    src:url("../fonts/din-medium-webfont.eot");
+    src:url("../fonts/din-medium-webfont.eot?#iefix") format("embedded-opentype"),url("../fonts/din-medium-webfont.woff2") format("woff2"),url("../fonts/din-medium-webfont.svg#dinmedium") format("svg"),url("../fonts/din-medium.ttf") format("truetype"),url("../fonts/din-medium.woff") format("woff");
+    font-weight:normal;
+    font-style:normal;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale
+}
+    
+@font-face{
+    font-family:'dinLight';
+    src:url("../fonts/din-light-webfont.eot");
+    src:url("../fonts/din-light-webfont.eot?#iefix") format("embedded-opentype"),url("../fonts/din-light-webfont.woff2") format("woff2"),url("../fonts/din-light-webfont.svg#dinlight") format("svg"),url("../fonts/din-light.ttf") format("truetype"),url("../fonts/din-light.woff") format("woff");
+    font-weight:normal;
+    font-style:normal;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale
+}
+
+@font-face{
+    font-family:'dinBold';
+    src:url("../fonts/din-bold-webfont.eot");
+    src:url("../fonts/din-bold-webfont.eot?#iefix") format("embedded-opentype"),url("../fonts/din-bold-webfont.woff2") format("woff2"),url("../fonts/din-bold-webfont.svg#dinregular") format("svg"),url("../fonts/din-bold.ttf") format("truetype"),url("../fonts/din-bold.woff") format("woff");
+    font-weight:normal;
+    font-style:normal;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: 'dinRegular';
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #EBEBEC;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:disabled {
+    cursor: default;
+}
+
+i {
+    font-family: 'streamline';
+    font-style: normal;
+}
+
+li {
+    list-style: none;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+input[type=text] {
+    width: 100%;
+    display: block;
+    outline: none;
+    font-family: 'dinRegular';
+    font-size: 14px;
+    color: #666;
+}
+
+
+/*::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background: #999;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background: #e6e6e6;
+}*/
+

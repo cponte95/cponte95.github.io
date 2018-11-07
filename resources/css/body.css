@@ -1,0 +1,155 @@
+
+
+
+.button {
+    width: 125px;
+    text-align: center;
+    margin-left: 5px;
+    height: 30px;
+    display: block;
+    float: right;
+    margin-left: 5px;
+}
+
+.button.main-button {
+    background: #20a3ff;
+    border: none;
+    color: #fff;
+}
+
+.button.main-button:hover {
+    background: #007cd3;
+}
+
+.button.main-button:disabled {
+    background: #a0d8ff;
+}
+
+.button.side-button {
+    background: #fbfbfb;
+    border: 1px solid #7db7d1;
+    color: #20a3ff;
+}
+
+.button.side-button:hover {
+    border-color: #007cd3;
+    background: #fbfbfb;
+    color: #007cd3;
+}
+
+.button.side-button:disabled {
+    border: none;
+    color: #a0d8ff;
+}
+
+
+
+.drowdown-list {
+    width: 100%;
+    display: block;
+    background: #fff;
+    height: 30px;
+}
+
+.drowdown-list .drowdown-link {
+    display: block;
+    height: 100%;
+    padding: 5px;
+}
+
+.drowdown-list .drowdown-link .drowdown-label {
+    vertical-align: middle;
+    color: #666;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.drowdown-list .drowdown-link .drowdown-icon {
+    vertical-align: middle;
+    float: right;
+    color: #62beff;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.drowdown-list .drowdown-link .drowdown-icon::before {
+    content: "\e90d";
+}
+
+.search-modal {
+    
+}
+
+.search-modal .search-dialog {
+    display: none;
+    position: absolute;
+    border-radius: 5px;
+    box-shadow: 0 1px 20px 0 rgba(0,0,0,0.2);
+    background: #fff;
+    width: 300px;
+    bottom: 10px;
+    top: 10px;
+    left: 50px;
+}
+
+.search-modal .search-dialog .search-header {
+    background: #20a3ff;
+    padding: 10px;
+    border-radius: 5px 5px 0 0;
+}
+
+.search-modal .search-dialog .search-header .search-title {
+    color: #fff;
+    font-size: 14px;
+}
+
+.search-modal .search-dialog .search-form {
+    background: #EBEBEC;
+    border-bottom: 1px solid #ccc;
+    padding: 5px;
+}
+
+.search-modal .search-dialog .result-container {
+    background: #fff;
+    border-radius: 0 0 5px 5px;
+    max-height: 250px;
+}
+
+.search-box {
+    border: 1px solid #bbb;
+    border-radius: 3px;
+    height: 30px;
+}
+
+.search-box .search-icon {
+    position: absolute;
+    padding: 6px;
+    color: #999;
+}
+
+.search-box .search-icon::before {
+    content: "\e606";
+}
+
+.search-box input[type=text] {
+    border: none;
+    height: 100%;
+    border-radius: 3px;
+    padding-left: 30px;
+}
+
+
+
+.form-label {
+    font-size: 12px;
+    padding: 7px 10px;
+    display: block;
+    color: #666;
+}
+
+.form-text {
+    font-size: 14px;
+    line-height: 30px;
+    display: block;
+    color: #666;
+}

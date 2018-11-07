@@ -1,0 +1,113 @@
+<html>
+<head>
+    <title>BanBif Banking</title>
+    <link rel="shortcut icon" href="resources/images/icbankingicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="resources/css/banbif.rwd.css">
+
+    <script src="resources/js/jquery.min.js"></script>
+    <script>
+    
+        $(function() {
+
+            $('.header .btn-menu .btn-menu-link').on('click', function() {
+                $('.body').toggleClass('full-screen');
+                $('.nav').toggleClass('displayed');
+                $(this).find('.btn-menu-icon').toggleClass('hide show');
+            });
+
+            $('.nav .menu .item .item-link').on('click', function() {
+                $('.nav .menu .item .item-link').removeClass('active');
+                $(this).addClass('active');
+            });
+
+        });
+    
+    </script>
+
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="header-group">
+                <div class="btn-menu">
+                    <a class="btn-menu-link">
+                        <i class="btn-menu-icon hide"></i>
+                    </a>
+                </div>
+                <div class="logo">
+                    <a class="logo-link"></a>
+                </div>
+            </div>
+            <div class="header-group">
+                <div class="user">
+                    <a class="user-link">
+                        <i class="user-icon"></i>
+                        <span class="user-label">CARLOS PONTE MORALES</span>
+                    </a>
+                </div>
+                <div class="logout">
+                    <a class="logout-link">
+                        <i class="logout-icon"></i>
+                        <span class="logout-label">Salir</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <div class="nav displayed">
+            <ul class="menu">
+                <li class="item">
+                    <a class="item-link" onclick="$('.body').load('views/01.disposicion.efectivo/01.01.cuentas.propias/01.01.01.html')" href="views/01.disposicion.efectivo/01.01.cuentas.propias/01.01.01.html" target="main">
+                        <i class="item-icon" role="dec"></i>
+                        <span class="item-label">Disposici&oacute;n de Efectivo a Cuentas</span>
+                    </a>
+                </li>
+                <li class="item">
+                    <a class="item-link">
+                        <i class="item-icon" role="sm"></i>
+                        <span class="item-label">Seguimiento de Meta</span>
+                    </a>
+                </li>
+                <li class="item">
+                    <a class="item-link">
+                        <i class="item-icon" role="dhp"></i>
+                        <span class="item-label">Disposici&oacute;n de Ahorro Programado</span>
+                    </a>
+                </li>
+                <li class="item">
+                    <a class="item-link">
+                        <i class="item-icon" role="av"></i>
+                        <span class="item-label">Ahorro Vuelto</span>
+                    </a>
+                </li>
+                <li class="item">
+                    <a class="item-link">
+                        <i class="item-icon" seguimiento-meta></i>
+                        <span class="item-label">Seguimiento de Meta</span>
+                    </a>
+                </li>
+                <li class="item">
+                    <a class="item-link">
+                        <i class="item-icon" seguimiento-meta></i>
+                        <span class="item-label">Seguimiento de Meta</span>
+                    </a>
+                </li>
+                <li class="item">
+                    <a class="item-link">
+                        <i class="item-icon" seguimiento-meta></i>
+                        <span class="item-label">sssssssss</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section>
+        <div class="body">
+            <iframe class="main" name="main"></iframe>
+        </div>
+    </section>
+
+</body>
+</html>
