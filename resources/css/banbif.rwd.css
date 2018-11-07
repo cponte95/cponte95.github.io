@@ -79,6 +79,18 @@ li {
     list-style: none;
 }
 
+button {
+    cursor: pointer;
+}
+
+button:disabled {
+    cursor: default;
+}
+
+input, select, button {
+    outline: none;
+}
+
 ::-webkit-scrollbar {
     width: 0;
 }
@@ -198,6 +210,7 @@ li {
     transition: width 1s;
     width: 0;
     display: flex;
+    border-right: 1px solid #bbb;
 }
 
 .nav.displayed {
@@ -209,10 +222,9 @@ li {
     flex-direction: column;
     margin: 0;
     padding: 0;
-    padding-bottom: 20px;
-    border-right: 1px solid #bbb;
     overflow-y: auto;
     overflow-x: hidden;
+    min-width: calc(100% + 18px);
     height: calc(100% - 60px);
 }
 
@@ -282,26 +294,28 @@ li {
     right: 0;
     top: 60px;
     left: 80px;
-    bottom: 0;
     -webkit-transition: left 1s;
     -moz-transition: left 1s;
     transition: left 1s;
     display: flex;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: calc(100% - 60px);
 }
 
 .body.full-screen {
     left: 0;
 }
 
-.main {
-    border: none;
+.body .wrapper {
     width: 100%;
 }
+
 
 @media screen and (max-width: 1000px) {
 
     .header {
-        padding: 5px 0;
+        padding: 5px 0; 
         height: 40px;
     }
 

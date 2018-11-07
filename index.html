@@ -3,6 +3,8 @@
     <title>BanBif Banking</title>
     <link rel="shortcut icon" href="resources/images/icbankingicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="resources/css/banbif.rwd.css">
+    <link rel="stylesheet" href="resources/css/banbif.ui.css">
+    <link rel="stylesheet" href="resources/css/body.css">
 
     <script src="resources/js/jquery.min.js"></script>
     <script>
@@ -58,7 +60,7 @@
         <div class="nav displayed">
             <ul class="menu">
                 <li class="item">
-                    <a class="item-link" onclick="$('.body').load('views/01.disposicion.efectivo/01.01.cuentas.propias/01.01.01.html')" href="views/01.disposicion.efectivo/01.01.cuentas.propias/01.01.01.html" target="main">
+                    <a class="item-link" onclick="$('.wrapper').load('views/01.disposicion.efectivo/01.01.cuentas.propias/01.01.01.html')">
                         <i class="item-icon" role="dec"></i>
                         <span class="item-label">Disposici&oacute;n de Efectivo a Cuentas</span>
                     </a>
@@ -104,9 +106,7 @@
     </nav>
 
     <section>
-        <div class="body">
-            <iframe class="main" name="main"></iframe>
-        </div>
+        <div class="body"><div class="wrapper"></div></div>
     </section>
 
 </body>

@@ -50,42 +50,6 @@
 
 /* GENERAL */
 
-* {
-    box-sizing: border-box;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    font-family: 'dinRegular';
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    background: #EBEBEC;
-}
-
-i {
-    font-family: 'streamline';
-    font-style: normal;
-}
-
-button {
-    cursor: pointer;
-}
-
-button:disabled {
-    cursor: default;
-}
-
-input, select, button {
-    outline: none;
-}
-
-::-webkit-scrollbar {
-    width: 0;
-}
-
 .row {
     display: flex;
     flex-wrap: nowrap;
@@ -157,12 +121,13 @@ input, select, button {
     display: flex;
     background: #f8f8f8;
     border-bottom: 1px solid #d7d7d7;
-    padding: 12px 15px;
+    padding: 13px 15px;
     align-items: center;
 }
 
 .form .form-header .form-title {
     color: #333;
+    line-height: 1;
 }
 
 .form .form-wrapper {
@@ -175,6 +140,7 @@ input, select, button {
     padding-right: 50px;
     display: flex;
     flex-direction: column;
+    padding-bottom: 20px;
 }
 
 .form .form-wrapper .form-group .form-group-header {
@@ -208,9 +174,7 @@ input, select, button {
 }
 
 .form .form-wrapper .form-group .form-group-content .form-group-box {
-    padding: 5px 0;
-    padding-right: 25px;
-    padding-left: 25px;
+    padding: 5px 25px 0 25px;
     width: 100%;
 }
 
@@ -226,7 +190,7 @@ input, select, button {
     display: flex;
     background: #f8f8f8;
     border-top: 1px solid #d7d7d7;
-    padding: 5px;
+    padding: 6px;
     align-items: center;
     justify-content: flex-end;
 }
@@ -271,7 +235,7 @@ input, select, button {
 }
 
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 1000px) {
 
     .row {
         flex-direction: column;
@@ -284,6 +248,10 @@ input, select, button {
     .form .form-wrapper .form-group {
         padding-right: 0;
     }
+    
+}
+
+@media screen and (max-width: 750px) {
 
     .form .form-wrapper .form-group .form-group-content {
         flex-direction: column;
@@ -293,5 +261,5 @@ input, select, button {
         padding-left: 0;
         padding-right: 0;
     }
-    
+
 }

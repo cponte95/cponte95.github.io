@@ -6,8 +6,6 @@
     text-align: center;
     margin-left: 5px;
     height: 30px;
-    display: block;
-    float: right;
     margin-left: 5px;
 }
 
@@ -76,10 +74,6 @@
     content: "\e90d";
 }
 
-.search-modal {
-    
-}
-
 .search-modal .search-dialog {
     display: none;
     position: absolute;
@@ -145,6 +139,7 @@
     padding: 7px 10px;
     display: block;
     color: #666;
+    line-height: 1;
 }
 
 .form-text {
