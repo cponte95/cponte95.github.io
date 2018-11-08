@@ -205,6 +205,7 @@ input, select, button {
     left: 0;
     height: 100%;
     overflow: hidden;
+    -o-transition: width 1s;
     -webkit-transition: width 1s;
     -moz-transition: width 1s;
     transition: width 1s;
@@ -231,6 +232,7 @@ input, select, button {
 .nav .menu .item {
     min-height: 80px;
     width: 80px;
+    -o-transition: width 1s;
     -webkit-transition: width 1s;
     -moz-transition: width 1s;
     transition: width 1s;
@@ -294,6 +296,7 @@ input, select, button {
     right: 0;
     top: 60px;
     left: 80px;
+    -o-transition: width 1s;
     -webkit-transition: left 1s;
     -moz-transition: left 1s;
     transition: left 1s;
@@ -311,6 +314,73 @@ input, select, button {
     width: 100%;
 }
 
+.modal {
+    background: rgba(0,0,0,0.4);
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.modal .dialog {
+    margin: auto;
+    position: relative;
+    box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.1);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal .dialog .dialog-header {
+    background: #20a3ff;
+    border-radius: 4px 4px 0 0;
+    color: #fff;
+    padding: 13px;
+    position: relative;
+}
+
+.modal .dialog .dialog-header .dialog-title {
+    font-size: 14px;
+    line-height: 1;
+}
+
+.modal .dialog .dialog-header .dialog-close {
+    position: absolute;
+    font-size: 20px;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    -o-transition: transform 0.25s;
+    -webkit-transition: transform 0.25s;
+    -moz-transition: transform 0.25s;
+    transition: transform 0.25s;
+}
+
+.modal .dialog .dialog-header .dialog-close::before {
+    content: "\e8bc";
+}
+
+.modal .dialog .dialog-header .dialog-close:hover {
+    transform: rotate(90deg);
+}
+
+.modal .dialog .dialog-content {
+    background: #fff;
+    padding: 20px;
+    display: flex;
+}
+
+.modal .dialog .dialog-footer {
+    background: #f8f8f8;
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px;
+    border-top: 1px solid #d7d7d7;
+    border-radius: 0 0 4px 4px;
+}
 
 @media screen and (max-width: 1000px) {
 

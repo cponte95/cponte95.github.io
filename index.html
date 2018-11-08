@@ -22,6 +22,10 @@
                 $(this).addClass('active');
             });
 
+            $('.header .user .user-link').on('click', function() {
+                $('#logout-message').show();
+            });
+
         });
     
     </script>
@@ -108,6 +112,26 @@
     <section>
         <div class="body"><div class="wrapper"></div></div>
     </section>
+
+    <div class="modal" id="logout-message">
+        <div class="dialog" style="width: 320px; top: 100px">
+            <div class="dialog-header">
+                <span class="dialog-title">Finalizar Sesi&oacute;n</span>
+                <i class="dialog-close"></i>
+            </div>
+            <div class="dialog-content">
+                <span class="form-text">¿Está seguro que desea salir?</span>
+            </div>
+            <div class="dialog-footer">
+                <button class="button side-button">
+                    <span>Cancelar</span>
+                </button>
+                <button class="button main-button">
+                    <span>Confirmar</span>
+                </button>
+            </div>
+        </div>
+    </div>
 
 </body>
 </html>
