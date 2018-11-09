@@ -140,7 +140,7 @@
     padding-right: 50px;
     display: flex;
     flex-direction: column;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
 }
 
 .form .form-wrapper .form-group .form-group-header {
@@ -174,7 +174,7 @@
 }
 
 .form .form-wrapper .form-group .form-group-content .form-group-box {
-    padding: 5px 25px 0 25px;
+    padding: 5px 25px;
     width: 100%;
 }
 

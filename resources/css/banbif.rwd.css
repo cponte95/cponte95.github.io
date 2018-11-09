@@ -67,14 +67,6 @@ body {
     background: #EBEBEC;
 }
 
-aside, header, section {
-    display: flex;
-}
-
-section {
-    width: 100%;
-}
-
 a {
     cursor: pointer;
     text-decoration: none;
@@ -209,45 +201,43 @@ input, select, button {
 
 /* MENU */
 
-.aside {
+.wrapper .aside {
     display: flex;
     background: #e6e6e6;
     overflow: hidden;
-    -o-transition: width 1s;
+    /*-o-transition: width 1s;
     -webkit-transition: width 1s;
     -moz-transition: width 1s;
-    transition: width 1s;
+    transition: width 1s;*/
     width: 0;
     border-right: 1px solid #bbb;
+    position: relative;
 }
 
-.aside.displayed {
+.wrapper .aside.displayed {
     width: 80px;
 }
 
-.aside .menu {
+.wrapper .aside .menu {
     display: flex;
     flex-direction: column;
-    overflow-y: auto;
-    overflow-x: hidden;
-    min-width: calc(100% + 18px);
+    overflow: hidden;
 }
 
-.aside .menu .item {
+.wrapper .aside .menu .item {
     display: flex;
     min-height: 80px;
-    width: 80px;
-    -o-transition: width 1s;
+    /*-o-transition: width 1s;
     -webkit-transition: width 1s;
     -moz-transition: width 1s;
-    transition: width 1s;
+    transition: width 1s;*/
 }
 
-.aside .menu .item:last-child {
+.wrapper .aside .menu .item:last-child {
     box-shadow: 0 1px 1px rgba(0,0,0,0.05);
 }
 
-.aside .menu .item .item-link {
+.wrapper .aside .menu .item .item-link {
     display: flex;
     color: #666;
     align-items: center;
@@ -255,54 +245,57 @@ input, select, button {
     flex-direction: column;
     padding: 0 5px;
     text-align: center;
+    width: 100%;
 }
 
-.aside .menu .item .item-link:hover, .aside .menu .item .item-link:active {
+.wrapper .aside .menu .item .item-link:hover, .aside .menu .item .item-link:active {
     background: #20a3ff;
     color: #fff;
 }
 
-.aside .menu .item .item-link.active {
+.wrapper .aside .menu .item .item-link.active {
     background: #62beff;
     color: #fff;
 }
 
-.aside .menu .item .item-link .item-icon {
+.wrapper .aside .menu .item .item-link .item-icon {
     font-size: 24px;
 }
 
-.aside .menu .item .item-link .item-label {
+.wrapper .aside .menu .item .item-link .item-label {
     font-size: 12px;
     margin-top: 5px;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
-.aside .menu .item .item-link .item-icon[role=dec]::before {
+.wrapper .aside .menu .item .item-link .item-icon[role=dec]::before {
     content: "\ea4a";
 }
 
-.aside .menu .item .item-link .item-icon[role=sm]::before {
+.wrapper .aside .menu .item .item-link .item-icon[role=sm]::before {
     content: "\e971";
 }
 
-.aside .menu .item .item-link .item-icon[role=dhp]::before {
+.wrapper .aside .menu .item .item-link .item-icon[role=dhp]::before {
     content: "\ea08";
 }
 
-.aside .menu .item .item-link .item-icon[role=av]::before {
+.wrapper .aside .menu .item .item-link .item-icon[role=av]::before {
     content: "\ea21";
 }
 
 /* BODY */
 
-.section {
+.wrapper .section {
     background: #EBEBEC;
     display: flex;
     overflow-y: auto;
     overflow-x: hidden;
-    width: 100%;
+    width: calc(100% - 80px);
 }
 
-.section .container {
+.wrapper .section .container {
     width: 100%;
 }
 
@@ -376,7 +369,7 @@ input, select, button {
 
 @media screen and (max-width: 1000px) {
 
-    .header {
+    /*.header {
         padding: 5px 0; 
         height: 40px;
     }
@@ -393,12 +386,48 @@ input, select, button {
         display: none;
     }
 
-    .aside {
-        top: 40px;
-    }
-
     .body {
         top: 40px;
+    }*/
+
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .wrapper .aside {
+        width: 100% !important;
+        min-height: 40px;
+        border-right: none;
+        border-bottom: 1px solid #bbb;
+    }
+
+    .wrapper .aside .menu {
+        flex-direction: row
+    }
+
+    .wrapper .aside .menu .item {
+        min-height: 0;
+        min-width: 200px;
+    }
+
+    .wrapper .aside .menu .item .item-link {
+        flex-direction: row;
+        padding: 0 10px;
+    }
+
+    .wrapper .aside .menu .item .item-link .item-icon {
+        font-size: 18px;
+    }
+
+    .wrapper .aside .menu .item .item-link .item-label {
+        font-size: 14px;
+        margin-top: 0;
+        margin-left: 10px;
+        white-space: nowrap;
+    }
+
+    .wrapper .section {
+        width: 100%;
     }
 
 }

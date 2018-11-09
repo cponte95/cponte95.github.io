@@ -28,83 +28,83 @@
 
 </head>
 <body>
-    <header>
-        <div class="header">
-            <div class="btn-menu">
-                <a class="btn-menu-link">
-                    <i class="btn-menu-icon hide"></i>
-                </a>
-            </div>
-            <div class="logo">
-                <a class="logo-link"></a>
-            </div>
-            <div class="user">
-                <a class="user-link">
-                    <i class="user-icon"></i>
-                    <span class="user-label">CARLOS PONTE MORALES</span>
-                </a>
-            </div>
-            <div class="logout">
-                <a class="logout-link" onclick="$('#logout-popup').show()">
-                    <i class="logout-icon"></i>
-                    <span class="logout-label">Salir</span>
-                </a>
-            </div>
+
+    <header class="header">
+        <div class="btn-menu">
+            <a class="btn-menu-link">
+                <i class="btn-menu-icon hide"></i>
+            </a>
+        </div>
+        <div class="logo">
+            <a class="logo-link"></a>
+        </div>
+        <div class="user">
+            <a class="user-link">
+                <i class="user-icon"></i>
+                <span class="user-label">CARLOS PONTE MORALES</span>
+            </a>
+        </div>
+        <div class="logout">
+            <a class="logout-link" onclick="$('#logout-popup').show()">
+                <i class="logout-icon"></i>
+                <span class="logout-label">Salir</span>
+            </a>
         </div>
     </header>
+	
     <div class="wrapper">
-        <aside>
-            <div class="aside displayed">
-                <ul class="menu">
-                    <li class="item">
-                        <a class="item-link" onclick="$('.container').load('views/01.disposicion.efectivo/01.01.cuentas.propias/01.01.01.html')">
-                            <i class="item-icon" role="dec"></i>
-                            <span class="item-label">Disposici&oacute;n de Efectivo a Cuentas</span>
-                        </a>
-                    </li>
-                    <li class="item">
-                        <a class="item-link">
-                            <i class="item-icon" role="sm"></i>
-                            <span class="item-label">Seguimiento de Meta</span>
-                        </a>
-                    </li>
-                    <li class="item">
-                        <a class="item-link">
-                            <i class="item-icon" role="dhp"></i>
-                            <span class="item-label">Disposici&oacute;n de Ahorro Programado</span>
-                        </a>
-                    </li>
-                    <li class="item">
-                        <a class="item-link">
-                            <i class="item-icon" role="av"></i>
-                            <span class="item-label">Ahorro Vuelto</span>
-                        </a>
-                    </li>
-                    <li class="item">
-                        <a class="item-link">
-                            <i class="item-icon" seguimiento-meta></i>
-                            <span class="item-label">Seguimiento de Meta</span>
-                        </a>
-                    </li>
-                    <li class="item">
-                        <a class="item-link">
-                            <i class="item-icon" seguimiento-meta></i>
-                            <span class="item-label">Seguimiento de Meta</span>
-                        </a>
-                    </li>
-                    <li class="item">
-                        <a class="item-link">
-                            <i class="item-icon" seguimiento-meta></i>
-                            <span class="item-label">sssssssss</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+        <aside class="aside displayed">
+            <ul class="menu">
+                <li class="item">
+                    <a class="item-link" onclick="$('.container').load('views/01.disposicion.efectivo/01.01.cuentas.propias/01.01.01.html')">
+                        <i class="item-icon" role="dec"></i>
+                        <span class="item-label">Disposici&oacute;n de Efectivo a Cuentas</span>
+                    </a>
+                </li>
+                <li class="item">
+                    <a class="item-link">
+                        <i class="item-icon" role="sm"></i>
+                        <span class="item-label">Seguimiento de Meta</span>
+                    </a>
+                </li>
+                <li class="item">
+                    <a class="item-link">
+                        <i class="item-icon" role="dhp"></i>
+                        <span class="item-label">Disposici&oacute;n de Ahorro Programado</span>
+                    </a>
+                </li>
+                <li class="item">
+                    <a class="item-link">
+                        <i class="item-icon" role="av"></i>
+                        <span class="item-label">Ahorro Vuelto</span>
+                    </a>
+                </li>
+                <li class="item">
+                    <a class="item-link">
+                        <i class="item-icon" seguimiento-meta></i>
+                        <span class="item-label">Seguimiento de Meta</span>
+                    </a>
+                </li>
+                <li class="item">
+                    <a class="item-link">
+                        <i class="item-icon" seguimiento-meta></i>
+                        <span class="item-label">Seguimiento de Meta</span>
+                    </a>
+                </li>
+                <li class="item">
+                    <a class="item-link">
+                        <i class="item-icon" seguimiento-meta></i>
+                        <span class="item-label">sssssssss</span>
+                    </a>
+                </li>
+            </ul>
         </aside>
     
-        <section>
-            <div class="section"><div class="container"></div></div>
+        <section class="section">
+            <div class="scroll-top"></div>
+            <div class="container"></div>
         </section>
+		
     </div>
     
     <div class="modal" id="logout-popup">
