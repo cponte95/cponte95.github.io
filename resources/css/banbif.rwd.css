@@ -367,7 +367,7 @@ input, select, button {
     border-radius: 0 0 4px 4px;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 900px) {
 
     /*.header {
         padding: 5px 0; 
